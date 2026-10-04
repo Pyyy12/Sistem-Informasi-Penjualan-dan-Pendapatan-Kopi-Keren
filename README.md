@@ -1,58 +1,51 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ☕ Kopi Keren - Sistem Manajemen Penjualan & Pengeluaran Gerobak Keliling
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem berbasis **Laravel 11** untuk mencatat operasional armada gerobak keliling **Kopi Keren** (model street coffee keliling ala Kopi Jago). Aplikasi ini memudahkan tracking pemasukan harian dari 8 varian menu, pengeluaran operasional per gerobak, serta visualisasi grafik tren keuangan harian.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Fitur Utama
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Pencatatan Penjualan Multi-Menu**: Form input terintegrasi untuk 8 varian menu sekaligus per hari.
+- **Validasi Kapasitas Gerobak**: Memastikan total cup yang dicatat tidak melebihi kapasitas fisik gerobak (**maksimal 80 pcs per gerobak/hari**).
+- **Pencatatan Pengeluaran Operasional**: Input cepat biaya harian seperti es batu kristal, bensin, cup/sedotan, dan kebutuhan logistik lainnya.
+- **Dashboard Ringkasan Keuangan**:
+  - Total Omzet / Pemasukan
+  - Total Biaya Operasional / Pengeluaran
+  - Laba Bersih (*Net Profit*)
+- **Grafik Tren Interaktif**: Visualisasi perbandingan pemasukan vs pengeluaran harian menggunakan **Chart.js**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 📋 Daftar 8 Menu Kopi Keren
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+| No | Nama Menu | Kategori | Harga (Rp) |
+|---|---|---|---|
+| 1 | Kopi Hitam Tubruk | Coffee | 7.000 |
+| 2 | Americano Dingin | Coffee | 8.000 |
+| 3 | Cokelat Klasik | Non-Coffee | 9.000 |
+| 4 | Kopi Susu Gula Aren | Signature | 10.000 |
+| 5 | Kopi Pandan Latte | Flavored Latte | 11.000 |
+| 6 | Vanilla Latte | Flavored Latte | 12.000 |
+| 7 | Matcha Latte | Non-Coffee | 12.000 |
+| 8 | Caramel Macchiato | Premium | 13.000 |
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+*Kapasitas bawaan: 80 cups per unit gerobak.*
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+---
 
-## Agentic Development
+## 🛠️ Persyaratan Sistem
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+- **PHP** >= 8.2
+- **Composer** >= 2.0
+- **MySQL / MariaDB / SQLite**
+- **Node.js & NPM** (opsional jika menggunakan Tailwind via Vite)
 
+---
+
+## 📦 Panduan Instalasi
+
+### 1. Clone Repositori & Masuk ke Folder Proyek
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
-```
-
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+git clone [https://github.com/username/kopi-keren.git](https://github.com/username/kopi-keren.git)
+cd kopi-keren
